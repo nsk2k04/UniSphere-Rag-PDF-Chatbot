@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Base URL of the FastAPI backend. Configure via .env (VITE_API_BASE_URL).
-const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+const baseURL = import.meta.env.VITE_API_BASE_URL || 'https://unisphere-backend-production.up.railway.app'
 
 export const apiClient = axios.create({
   baseURL,
@@ -20,7 +20,7 @@ export async function uploadPdf(file, { onProgress } = {}) {
     headers: { 'Content-Type': 'multipart/form-data' },
     onUploadProgress: (event) => {
       if (onProgress && event.total) {
-        onProgress(Math.round((event.loaded * 100) / event.total))
+        onProgress(Math.round((event.loaded * 100) / event.total))x
       }
     },
   })
