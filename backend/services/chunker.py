@@ -2,7 +2,7 @@ def chunk_text(
     text,
     chunk_size=2000,
     overlap=100
-):x
+):
     chunks = []
 
     start = 0
