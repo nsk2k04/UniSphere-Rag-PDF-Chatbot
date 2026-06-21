@@ -44,6 +44,8 @@ def build_session_index(
     start_time = time.time()
 
     embeddings = create_embeddings(chunks)
+    print("EMBEDDINGS CREATED")
+    print("TOTAL EMBEDDINGS:", len(embeddings))
 
     print(
         f"EMBEDDINGS DONE IN {time.time() - start_time:.2f} SECONDS"
