@@ -20,7 +20,7 @@ export async function uploadPdf(file, { onProgress } = {}) {
     headers: { 'Content-Type': 'multipart/form-data' },
     onUploadProgress: (event) => {
       if (onProgress && event.total) {
-        onProgress(Math.round((event.loaded * 100) / event.total))x
+        onProgress(Math.round((event.loaded * 100) / event.total))
       }
     },
   })
