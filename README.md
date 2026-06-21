@@ -4,7 +4,7 @@ UniSphere is a Retrieval-Augmented Generation (RAG) application that allows user
 
 ## 🌐 Live Demo
 
-🔗 **Frontend:** https://uni-sphere-rag-pdf-chatbot.vercel.app/
+🔗 **Live Project Link:** https://uni-sphere-rag-pdf-chatbot.vercel.app/
 
 ## 🎥 Demo Video
 
